@@ -1,0 +1,23 @@
+import "oaidl.idl";
+import "ocidl.idl";
+import "tsvirtualchannels.idl";
+
+[uuid(d3c48573-ef8e-4f17-b3ee-528cbef93645), version(1.0)]
+library ChannelPluginLib
+{
+    [uuid(c630c239-3206-45d9-805f-fd6d8dc3d42b), version(1.0)]
+    coclass ChannelPlugin
+    {
+        [default] interface IWTSPlugin;
+    }
+    [uuid(1b3c4177-2008-4574-ae71-507a7a8d4ac6), version(1.0)]
+    coclass ListenerCallback
+    {
+        [default] interface IWTSListenerCallback;
+    }
+    [uuid(38ceaca9-19db-4917-92ea-8c9610b84a02), version(1.0)]
+    coclass ChannelCallback
+    {
+        [default] interface IWTSVirtualChannelCallback;
+    }
+};
