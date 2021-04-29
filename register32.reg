@@ -15,7 +15,7 @@ Windows Registry Editor Version 5.00
 "AppID"="{c630c239-3206-45d9-805f-fd6d8dc3d42b}"
 
 [HKEY_CLASSES_ROOT\CLSID\{c630c239-3206-45d9-805f-fd6d8dc3d42b}\InprocServer32]
-@="c:\\wrl_dvc\\x64\\Debug\\ChannelPlugin.dll"
+@="c:\\wrl_dvc\\Debug\\ChannelPlugin.dll"
 "ThreadingModel"="Free"
 
 [HKEY_CLASSES_ROOT\CLSID\{c630c239-3206-45d9-805f-fd6d8dc3d42b}\Programmable]
@@ -32,7 +32,7 @@ Windows Registry Editor Version 5.00
 "AppID"="{c630c239-3206-45d9-805f-fd6d8dc3d42b}"
 
 [HKEY_CLASSES_ROOT\CLSID\{1b3c4177-2008-4574-ae71-507a7a8d4ac6}\InprocServer32]
-@="c:\\wrl_dvc\\x64\\Debug\\ChannelPlugin.dll"
+@="c:\\wrl_dvc\\Debug\\ChannelPlugin.dll"
 "ThreadingModel"="Free"
 
 [HKEY_CLASSES_ROOT\CLSID\{1b3c4177-2008-4574-ae71-507a7a8d4ac6}\Programmable]
@@ -49,7 +49,7 @@ Windows Registry Editor Version 5.00
 "AppID"="{c630c239-3206-45d9-805f-fd6d8dc3d42b}"
 
 [HKEY_CLASSES_ROOT\CLSID\{38ceaca9-19db-4917-92ea-8c9610b84a02}\InprocServer32]
-@="c:\\wrl_dvc\\x64\\Debug\\ChannelPlugin.dll"
+@="c:\\wrl_dvc\\Debug\\ChannelPlugin.dll"
 "ThreadingModel"="Free"
 
 [HKEY_CLASSES_ROOT\CLSID\{38ceaca9-19db-4917-92ea-8c9610b84a02}\Programmable]
