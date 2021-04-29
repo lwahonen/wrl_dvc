@@ -1,5 +1,9 @@
 Windows Registry Editor Version 5.00
 
+; Register plugin for current user
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Terminal Server Client\Default\AddIns\WRL_Sample]
+"Name"="{c630c239-3206-45d9-805f-fd6d8dc3d42b}"
+
 ; AppID
 [HKEY_CLASSES_ROOT\Wow6432Node\AppID\{c630c239-3206-45d9-805f-fd6d8dc3d42b}]
 @="ChannelPlugin component"
@@ -110,3 +114,4 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{38ceaca9-19db-4917-92ea-8c9610b84a02}\Version]
 @="1.0"
+
