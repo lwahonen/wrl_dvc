@@ -31,7 +31,7 @@ public:
 		if (SUCCEEDED(hr))
 		{
 			IWTSListener* listener;
-			hr=pChannelMgr->CreateListener("DVC_Sample", 0, listener_callback, &listener);
+			hr=pChannelMgr->CreateListener("tryme", 0, listener_callback, &listener);
 			if (SUCCEEDED(hr))
 			{
 				OutputDebugString(L"[DVC SKELETON]: Created and installed IWTSListenerCallback successfully");
@@ -83,6 +83,12 @@ public:
 		return S_OK;
 	}
 
+	HRESULT STDMETHODCALLTYPE setChannel(IWTSVirtualChannel* p)
+	{
+		pChannel = p;
+		return S_OK;
+	}
+	
 	IWTSVirtualChannel* pChannel=nullptr;
 };
 CoCreatableClass(ChannelCallback);
@@ -120,7 +126,7 @@ public:
 			*pbAccept = true;
 			*ppCallback = (static_cast<IWTSVirtualChannelCallback*>(channel_callback));
 			// Provide the IWTSVirtualChannel to IWTSVirtualChannelCallback so we can echo bytes back as needed
-			channel_callback->pChannel = pChannel;
+			channel_callback->setChannel(pChannel);
 		 	// Just leak the references to IWTSVirtualChannel and IWTSVirtualChannelCallback.
 			// Memory management does not matter in sample code, we just need the objects to stay alive forever
 			channel_callback->AddRef();
